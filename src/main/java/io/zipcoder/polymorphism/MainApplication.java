@@ -48,7 +48,7 @@ public class MainApplication {
                 askForPetType();
                 String petType = scanner.next().toLowerCase();
 
-                if (petType.contains("cat")){
+                if (petType.equals("cat")){
                     askForPetName();
                     String petName = scanner.next();
                     petArrayList.add(new Cat(petName));
@@ -56,19 +56,19 @@ public class MainApplication {
 
 
                 }
-                else if(petType.contains("dog")){
+                else if(petType.equals("dog")){
                     askForPetName();
                     String petName = scanner.next();
                     petArrayList.add(new Dog(petName));
                     numPets--;
                 }
-                else if(petType.contains("fox")){
+                else if(petType.equals("fox")){
                     askForPetName();
                     String petName = scanner.next();
                     petArrayList.add(new Fox(petName));
                     numPets--;
                 }
-                else if(petType.contains("bird")){
+                else if(petType.equals("bird")){
                     askForPetName();
                     String petName = scanner.next();
                     petArrayList.add(new Bird(petName));
